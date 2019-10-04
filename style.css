@@ -1,0 +1,49 @@
+#grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 4fr 1fr; 
+  }
+  
+  #title{
+    padding: 2px;
+    background: blue;
+    margin: 8px;
+  }
+  
+  #contents {
+    padding: 8px;
+    margin: 2px;
+    background: green;
+  }
+  
+  #controls {
+    padding: 8px;
+    margin: 4px;
+    background: red;
+  }
+
+  #list-contents {
+    margin: auto;
+  }
+
+  #list-contents th:nth-child(odd){
+    background:#c5c5c5;
+  }
+
+  #list-contents th:nth-child(even){
+    background:#817b7c;
+  }
+
+  #list-contents tr:nth-child(odd) {
+    background: #e0e085;
+  }
+  
+  #list-contents tr:nth-child(even) {
+    background: #cccc33;
+  }
+
+  @media (max-width: 650px) {
+    .remove {
+      display: none;
+    }
+  }
